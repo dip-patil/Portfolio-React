@@ -1,0 +1,101 @@
+.signup {
+    width: 100%;
+    
+    padding-top: 3rem;
+    
+    margin-top: 1rem;
+    margin: 0px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.skillTitle{
+    margin-bottom: 5%;
+}
+.signup .container {
+    display: grid;
+    margin-top: 0px;
+    padding: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.contactList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+
+}
+
+.iconSend{
+    margin-left: 6px;
+    margin-bottom: -2px;
+ }
+.card1 {
+    background-color: #F5F8FF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 138px;
+    text-align: center;
+    width: 350px;
+    
+    border: 0.5px solid white;
+
+
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.card1:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+}
+.signup .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 4.1rem;
+    padding-right: 2rem;
+    height: 500px;
+
+}
+.heading{
+    margin-bottom: 5%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signup img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.signup .right p {
+    margin: 2rem 0;
+}
+
+
+@media screen and (max-width:940px) {
+    .signup .container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,173 @@
+
+.featured {
+    width: 100%;
+    padding: 8rem 0;
+    
+    background-color: var(--background);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+
+.featured .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+}
+.icon{
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.skillTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.downloadbtn{
+    padding-left: 8%;
+    border: 1px solid red;
+    padding-right: 8%;
+   width: 100%;
+}
+
+.featured .left {
+    margin-top: 20px;
+    padding: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   background-color: white;
+    height: 290px;
+    border-radius: 30px;
+    margin-right: 10px;
+
+    border: 0.5px solid #f5f2f5;
+    
+
+}
+.skillsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.featured .left p {
+    margin: 1.5rem 0;
+}
+
+.featured .left .btn {
+    align-self: flex-start;
+}
+
+.featured .right {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   background-color: white;
+    height: 290px;
+    border-radius: 30px;
+    border: 0.5px solid #f5f2f5;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    margin: 3%;
+    width: 115px;
+    height: 7s0px;
+}
+h3{
+    font-size: 1.4rem;
+    color: rgb(153, 149, 149);
+    display: inline-block;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+h4{
+    font-size: 1.2rem;
+    color: black;
+    display: inline-block;
+    margin-bottom: 8%;
+}
+.icons{
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.featured .right .card:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+}
+
+.featured .card .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured .right img {
+    width: 50px;
+    margin: auto;
+    padding: .2rem 0;
+}
+
+
+
+.featured .icon {
+    font-size: 36px;
+    margin: auto;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured span {
+    font-size: 22px;
+}
+
+.green {
+    color: var(--primary);
+}
+
+.red {
+    color: #ff0000;
+}
+
+
+@media screen and (max-width: 940px) {
+    .featured .container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .left .btn {
+        align-self: center;
+    }
+    .featured .left {
+        margin-right: 0px;
+        height: 330px;
+    }
+    .featured .right {
+        margin-left: 0px;
+        height: 330px;
+
+    }
+}
+
+
+@media screen and (max-width: 478px) {
+    .featured .container .right .card {
+        width: 100%;
+    }
+}
